@@ -5,8 +5,6 @@ from flask_session import Session
 from stellar_sdk import Server, Keypair, TransactionBuilder, Network, Asset
 
 
-accounts_url = 'https://horizon-testnet.stellar.org/accounts/{}'
-
 server = Server(horizon_url='https://horizon-testnet.stellar.org')
 
 def create_app(test_config=None):
